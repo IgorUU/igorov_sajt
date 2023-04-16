@@ -40,3 +40,5 @@ web/sites/simpletest
 
 # Ignore multi-site test environment.
 # simpletest
+.idea
+web/core
