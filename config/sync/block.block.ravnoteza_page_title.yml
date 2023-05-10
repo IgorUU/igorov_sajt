@@ -1,0 +1,20 @@
+uuid: 8de0087d-6601-4612-a40d-a274ec83b59a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: ravnoteza_page_title
+theme: ravnoteza
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

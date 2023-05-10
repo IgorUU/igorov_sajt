@@ -1,0 +1,22 @@
+uuid: 97280f5f-2b4a-430e-a761-7cb0dc1c1b1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: ravnoteza_help
+theme: ravnoteza
+region: header
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

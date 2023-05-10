@@ -1,0 +1,22 @@
+uuid: 4c60dd32-5ab1-4412-b175-c425a1828e2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: ravnoteza_breadcrumbs
+theme: ravnoteza
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

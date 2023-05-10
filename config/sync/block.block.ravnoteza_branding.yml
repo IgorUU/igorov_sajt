@@ -1,0 +1,25 @@
+uuid: bd316568-7d5f-467f-92e8-efc7437b84ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: ravnoteza_branding
+theme: ravnoteza
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

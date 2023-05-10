@@ -1,0 +1,22 @@
+uuid: e072a7ce-5f74-46ac-ba69-e6f035c8c2f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: ravnoteza_powered
+theme: ravnoteza
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

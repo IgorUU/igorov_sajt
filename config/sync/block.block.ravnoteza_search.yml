@@ -1,0 +1,23 @@
+uuid: e66d6c11-c8b9-4455-8ecb-b70878a12a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ravnoteza
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: ravnoteza_search
+theme: ravnoteza
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }
