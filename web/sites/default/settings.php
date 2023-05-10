@@ -827,4 +827,4 @@ $databases['default']['default'] = array (
     'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
   ]
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_cIabuZBgcv1N8ElxuRgwAZsionNKTfnxoc5nXYDX5aJHQlkQ6xD_hmSjKMvZJ-KbYSkN4JuXPQ/sync';
+$settings['config_sync_directory'] = '../config/sync/';
