@@ -828,3 +828,18 @@ $databases['default']['default'] = array (
   ]
 );
 $settings['config_sync_directory'] = '../config/sync/';
+
+switch (getenv('CACHE_PRESET')) {
+  case 'disabled':
+    $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/development.services.yml';
+
+    $config['system.performance']['css']['preprocess'] = FALSE;
+    $config['system.performance']['js']['preprocess'] = FALSE;
+
+    // Set all caches to cache.backend.null
+    $settings['cache']['bins']['render'] = 'cache.backend.null';
+    $settings['cache']['bins']['discovery_migration'] = 'cache.backend.memory';
+    $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+    $settings['cache']['bins']['page'] = 'cache.backend.null';
+    break;
+}
