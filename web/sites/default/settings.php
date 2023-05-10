@@ -823,5 +823,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+  'init_commands' => [
+    'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+  ]
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_cIabuZBgcv1N8ElxuRgwAZsionNKTfnxoc5nXYDX5aJHQlkQ6xD_hmSjKMvZJ-KbYSkN4JuXPQ/sync';
