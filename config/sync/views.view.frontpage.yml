@@ -98,7 +98,7 @@ display:
           plugin_id: title
           label: ''
           empty: true
-          title: Welcome!
+          title: Ravnoteža
       sorts:
         sticky:
           id: sticky
