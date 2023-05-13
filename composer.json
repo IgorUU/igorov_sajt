@@ -30,6 +30,11 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
