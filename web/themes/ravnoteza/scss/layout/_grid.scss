@@ -1,0 +1,22 @@
+.grid-layout {
+  display: grid;
+
+  @media #{Normal} {
+    gap: 20px;
+  }
+
+  &--pre-header {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: " primary-navigation branding";
+    position: relative;
+  }
+}
+
+.region {
+  &-branding {
+    grid-area: branding;
+  }
+  &-primary-navigation {
+    grid-area: primary-navigation;
+  }
+}

@@ -97,12 +97,17 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
-      <div class="col-sm-12" role="heading">
       {# Header #}
         {% if page.header %}
           {% block header %}
             {{ page.header }}
           {% endblock %}
+        {% endif %}
+
+
+      <div class="grid-layout grid-layout--pre-header">
+        {% if page.branding %}
+          {{ page.branding }}
         {% endif %}
 
         {% if page.primary_navigation %}

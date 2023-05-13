@@ -20,7 +20,6 @@
  */
 #}
 {% macro menu_links(items, attributes, menu_level, classes, dropdown_classes) %}
-  <div class="primary-navigation">
   {% if items %}
     <ul{{ attributes.addClass(menu_level == 0 ? classes : dropdown_classes) }}>
       {% for item in items %}
@@ -51,7 +50,6 @@
       {% endfor %}
     </ul>
   {% endif %}
-  </div>
 {% endmacro %}
 
 {#
