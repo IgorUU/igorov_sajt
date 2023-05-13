@@ -223,7 +223,7 @@ services:
     - '3000:3000'
     volumes:
     - ./:/var/www/html
-    command: sh -c 'yarn install && yarn run start'
+    command: sh -c 'yarn install && yarn run gulp'
 
 #  webgrind:
 #    image: wodby/webgrind:$WEBGRIND_TAG
