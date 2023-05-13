@@ -97,14 +97,18 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
+      <div class="col-sm-12" role="heading">
       {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
+        {% if page.header %}
+          {% block header %}
             {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
+          {% endblock %}
+        {% endif %}
+
+        {% if page.primary_navigation %}
+          {{ page.primary_navigation }}
+        {% endif %}
+      </div>
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
