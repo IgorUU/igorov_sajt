@@ -1,10 +1,36 @@
 {
-  "name": "ravnoteza",
-  "private": true,
-  "scripts": {
-    "livereload": "livereload css"
-  },
+  "name": "gulp",
+  "version": "2.0.0",
+  "description": "",
+  "main": "gulpfile.js",
   "devDependencies": {
-    "livereload": "^0.9.3"
-  }
+    "browser-sync": "^2.26.7",
+    "drupal-breakpoints-scss": "^1.2.0",
+    "extend": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tap": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "upath": "^1.2.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "ie >= 10",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "scripts": {},
+  "license": "Apache-2.0"
 }
