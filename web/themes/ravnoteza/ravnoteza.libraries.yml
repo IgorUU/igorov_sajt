@@ -19,6 +19,6 @@ global:
       css/components/tabs.css: {}
       css/components/buttons.css: {}
     layout:
-      css/layouts/layout.css: {}
+      css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
