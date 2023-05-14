@@ -1,24 +1,15 @@
-# Main theme library.
-global:
+ravnoteza:
+  ravnoteza:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: 'Default library for the ravnoteza theme'
+    description: 'Default Studio Present theme library description.'
+    scss:
+      css/ravnoteza.css: 'scss/ravnoteza.scss'
   js:
     js/ravnoteza.js: {}
   css:
-    base:
-      css/base/elements.css: {}
-    component:
-      css/components/block.css: {}
-      css/components/breadcrumb.css: {}
-      css/components/field.css: {}
-      css/components/form.css: {}
-      css/components/header.css: {}
-      css/components/menu.css: {}
-      css/components/messages.css: {}
-      css/components/node.css: {}
-      css/components/sidebar.css: {}
-      css/components/table.css: {}
-      css/components/tabs.css: {}
-      css/components/buttons.css: {}
     layout:
       css/layout/layout.css: {}
     theme:
-      css/theme/print.css: { media: print }
+      css/ravnoteza.css: {}

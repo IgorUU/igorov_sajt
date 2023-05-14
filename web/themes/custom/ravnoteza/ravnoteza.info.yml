@@ -6,7 +6,7 @@ package: Custom
 core: 8.x
 core_version_requirement: ^9 || ^10
 libraries:
-  - ravnoteza/global
+  - ravnoteza/ravnoteza
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'
