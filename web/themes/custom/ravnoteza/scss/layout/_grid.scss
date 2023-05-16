@@ -1,5 +1,6 @@
 .grid-layout {
   display: grid;
+  grid-gap: 10px;
 
   @media #{Normal} {
     gap: 20px;
@@ -14,9 +15,19 @@
 
 .region {
   &-branding {
-    grid-area: branding;
+    grid-column: 1;
+    .logo {
+      height: 50px;
+      margin: 10px 0;
+      .logo-image {
+        height: 45px;
+      }
+    }
   }
   &-primary-navigation {
-    grid-area: primary-navigation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
   }
 }
