@@ -1,5 +1,16 @@
-.primary-navigation {
+a.primary-navigation {
   font-family: $header-font;
-  font-size: 30px;
+  font-size: 25px;
   color: #be70fa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 40px;
+}
+
+a.primary-navigation:hover {
+  transform: scale(+1.2);
+  background-color: #be70fa !important;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none !important;
 }
