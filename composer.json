@@ -18,6 +18,7 @@
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
         "drupal/bootstrap": "^3.28",
+        "drupal/cheeseburger_menu": "^5.0@RC",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
