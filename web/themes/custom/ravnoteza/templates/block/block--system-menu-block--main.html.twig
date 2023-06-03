@@ -1,0 +1,27 @@
+{% set ravnoteza_block_base = 'block ' ~ attributes.id|clean_class %}
+{% set ravnoteza_block = ravnoteza_block_base|replace({'ravnoteza-' : ''}) %}
+{% set ravnoteza_modifiers = id|split('__')|slice(1) %}
+{%
+  set classes = [
+  ravnoteza_block
+]
+%}
+{% for modifier in id|split('__')|slice(1) %}
+  {% set classes = classes|merge([ravnoteza_block ~ '--' ~ modifier|clean_class]) %}
+{% endfor %}
+{% set heading_id = attributes.id ~ '-title'|clean_id %}
+<nav aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+  {# Label. If not displayed, we still provide it for screen readers. #}
+  {% if not configuration.label_display %}
+    {% set title_attributes = title_attributes.setAttribute('id', heading_id).addClass('visually-hidden') %}
+  {% endif %}
+  {{ title_prefix }}
+  <div{{ title_attributes.addClass(ravnoteza_block ~ '__title') }}>{{ configuration.label }}</div>
+  {{ title_suffix }}
+
+  {# Menu. #}
+  {% block content %}
+    {% do content_attributes.setAttribute('ravnoteza_base', ravnoteza_block ~ '__') %}
+    {{ content }}
+  {% endblock %}
+</nav>

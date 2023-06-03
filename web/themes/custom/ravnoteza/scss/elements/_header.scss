@@ -3,6 +3,13 @@
 }
 
 .menu--main li {
-  margin-left: 20px;
-  margin-right: 20px;
+  @media #{$Phone} {
+    display: none;
+  }
+  @media #{$Narrow} {
+    margin: 0px 1px;
+  }
+  @media #{$Tablet} {
+    margin: 0px 20px;
+  }
 }

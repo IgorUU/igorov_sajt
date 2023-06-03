@@ -1,0 +1,6 @@
+.block-cheeseburgermenu__trigger-element {
+  @media #{$Narrow} {
+    display: none;
+  }
+  float: right;
+}
